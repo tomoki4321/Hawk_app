@@ -1,5 +1,4 @@
 <h1>ブログ詳細画面</h1>
-<p>タイトル: <%= @blog.title %></p>
+<h2>タイトル: <%= @blog.title %></h2>
 <p>内容: <%= @blog.content %></p>
-<p>画像: <%= image_tag(@blog.image.url) if @blog.image && @blog.image.url %><p>
-<%= link_to "ブログ一覧画面にもどる", blogs_path %>
+<p>画像: <br><%= image_tag(@blog.image.url,:size =>'640x480') if @blog.image && @blog.image.url %><p>
