@@ -17,6 +17,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'net-smtp'
 gem 'net-imap'
 gem 'net-pop'
+gem 'rexml'
+gem 'fog-aws'
+gem 'dotenv-rails'
 
 
 
@@ -29,6 +32,11 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'spring'
+  gem 'rspec-rails'
+  gem 'spring-commands-rspec'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'launchy'
 end
 
 group :test do
